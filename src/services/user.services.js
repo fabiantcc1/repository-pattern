@@ -47,3 +47,5 @@ class UserService {
         return userDeleted;
     }
 }
+
+module.exports = UserService;
