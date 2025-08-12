@@ -1,4 +1,4 @@
-const IUserRepository = require('./IUserRepository.js');
+const IUserRepository = require('./IUser.repository.js');
 
 class UserFakeRepository extends IUserRepository {
     constructor() {
