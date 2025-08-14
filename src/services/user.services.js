@@ -17,18 +17,18 @@ class UserService {
     }
 
     async findAll() {
-        return this.userRepository.getAll();
+        return await this.userRepository.getAll();
     }
 
     async create(userData) {
         const user = new User(userData);
 
-        return this.userRepository.add(user);
+        return await this.userRepository.create(user);
     }
 
     async update(id, userData) {
-        userData.id = id;
-        const userUpdated = this.userRepository.update(userData);
+        userData.id = Number(id);
+        const userUpdated = await this.userRepository.update(userData);
 
         if (!userUpdated) {
             throw new Error('User not found');
@@ -38,7 +38,7 @@ class UserService {
     }
 
     async delete(id) {
-        const userDeleted = this.userRepository.delete(id);
+        const userDeleted = await this.userRepository.delete(id);
 
         if (!userDeleted) {
             throw new Error('User not found');
