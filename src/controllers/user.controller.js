@@ -51,7 +51,7 @@ exports.delete = async (req, res, next) => {
         const { id } = req.params;
         const user = await userService.delete(id);
 
-        res.status(200).json();
+        res.status(200).json(user);
     } catch (error) {
         next(error);
     }
