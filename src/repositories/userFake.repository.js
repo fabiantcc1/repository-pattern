@@ -15,7 +15,7 @@ class UserFakeRepository extends IUserRepository {
         return this.users;
     }
 
-    async add(user) {
+    async create(user) {
         user.id = this.nextId++;
         this.users.push(user);
 
@@ -24,7 +24,7 @@ class UserFakeRepository extends IUserRepository {
 
     async update(updatedUser) {
         const index = this.users.findIndex(
-            (user) => user.id === updatedUser.id,
+            (user) => user.id === Number(updatedUser.id),
         );
         if (index === -1) {
             return null;
@@ -39,9 +39,11 @@ class UserFakeRepository extends IUserRepository {
         if (index === -1) {
             return false;
         }
+
+        const userDeleted = this.users[index];
         this.users.splice(index, 1);
 
-        return this.users[index];
+        return userDeleted;
     }
 }
 
