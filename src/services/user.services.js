@@ -1,9 +1,8 @@
-const UserRepository = require('../repositories/userFake.repository.js');
 const User = require('../models/user.model.js');
 
 class UserService {
-    constructor() {
-        this.userRepository = new UserRepository();
+    constructor(userRepository) {
+        this.userRepository = userRepository;
     }
 
     async findOne(id) {
