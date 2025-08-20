@@ -4,18 +4,18 @@ Este proyecto demuestra la implementación del **Repository Pattern** en Node.js
 
 ## 📋 Tabla de Contenidos
 
-1. [Descripción del Proyecto](#descripción-del-proyecto)
-2. [Arquitectura](#arquitectura)
-3. [Patrones Implementados](#patrones-implementados)
-4. [Estructura del Proyecto](#estructura-del-proyecto)
-5. [Componentes Principales](#componentes-principales)
-6. [Instalación y Configuración](#instalación-y-configuración)
-7. [API Endpoints](#api-endpoints)
-8. [Ejemplos de Uso](#ejemplos-de-uso)
-9. [Beneficios del Repository Pattern](#beneficios-del-repository-pattern)
-10. [Testing](#testing)
-11. [Patrones Relacionados](#patrones-relacionados)
-12. [Tecnologías Utilizadas](#tecnologías-utilizadas)
+1. [Descripción del Proyecto](#-descripción-del-proyecto)
+2. [Arquitectura](#-arquitectura)
+3. [Patrones Implementados](#-patrones-implementados)
+4. [Estructura del Proyecto](#-estructura-del-proyecto)
+5. [Componentes Principales](#-componentes-principales)
+6. [Instalación y Configuración](#️-instalación-y-configuración)
+7. [API Endpoints](#-api-endpoints)
+8. [Ejemplos de Uso](#-ejemplos-de-uso)
+9. [Beneficios del Repository Pattern](#-beneficios-del-repository-pattern)
+10. [Testing](#-testing)
+11. [Patrones Relacionados](#-patrones-relacionados)
+12. [Tecnologías Utilizadas](#️-tecnologías-utilizadas)
 
 ## 🎯 Descripción del Proyecto
 
